@@ -6,7 +6,7 @@ import { SearchComponent } from "../search/search.component";
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
-  imports: [SearchComponent]
+ 
 })
 export class headerComponent {
 
