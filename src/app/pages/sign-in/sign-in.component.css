@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  /* BACKGROUND IMAGE */
+  background: url('/assets/backg.jpg') no-repeat center center/cover;
+}
+
+.login-container {
+  background-color: rgba(110, 33, 33, 0.9);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(43, 4, 4, 0.47);
+  width: 100%;
+  max-width: 350px;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-family: Ubuntu, sans-serif;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ba2323;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #a3363670;
+  color: rgb(251, 251, 251);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #f5eded;
+  color: black;
+}
+
+.signup-link {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+.signup-link a {
+  color: #fff;
+  text-decoration: none;
+}

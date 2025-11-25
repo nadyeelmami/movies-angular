@@ -1,1 +1,134 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body{
+    background-color: #04000b;
+    color: aliceblue;
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+.section{
+    padding: 4.5rem 0 1.5rem;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    transition: 0.5s;
+   
+
+}
+header{
+    background: #930c0c7d;
+    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+header .navbar a {
+    color: #fff;
+}
+header .logo{
+    color: #fff;
+}
+.logo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.logo .fa{
+    font-size: 24px;
+    color: #ff2c1f;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    column-gap: 5rem;
+}
+.navbar li{
+    position: relative;
+}
+.navbar a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+.navbar a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #ff2c1f;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.4s all linear;
+}
+.navbar a:hover::after,.navbar .mv::after{
+    width: 100%;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000001;
+    display: none;
+}
+.btn{
+    padding: 0.5rem 1.3rem;
+    background: #ff2c1f;
+    color: #fff;
+    font-size: 400;
+    border-radius: 0.5rem;
+    position: relative;
+    z-index: 1;
+  
+}
+.btn:hover {
+    background: #fa1216;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #111;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-left: 1rem;
+}
+
+.search-container i {
+    color: #ff2c1f;
+    margin-right: 8px;
+    font-size: 1rem;
+}
+
+
+.search-container input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 180px;
+    font-size: 0.9rem;
+}
+
+
+.search-container input::placeholder {
+    color: #aaa;
+}
+* { box-sizing: border-box; }

@@ -1,0 +1,29 @@
+<header>
+
+    <a routerLink="/" class="logo">
+        <i class="fa fa-film" aria-hidden="true"></i>Movies
+    </a>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+        <li><a routerLink="/projet">Home</a></li>
+        <li><a routerLink="/movies">Movies</a></li>
+        <li><a routerLink="/tv-show">Tv Shows</a></li>
+        <li><a routerLink="/most" class="most">Most Watched</a></li>
+    </ul>
+   <!-- Search bar -->
+<div class="search-container">
+    <i class="fa fa-search" aria-hidden="true"></i>
+    <input 
+        type="text" 
+        placeholder="Rechercher un film ou une série..."
+        (keyup.enter)="searchMovies(searchInput.value)" 
+        #searchInput
+    >
+</div>
+
+
+    <a routerLink="/sign-in" class="btn">Sign In</a>
+
+</header>

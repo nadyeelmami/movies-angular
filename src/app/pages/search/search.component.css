@@ -1,0 +1,8 @@
+.search-results {
+  display: inline-block;
+  margin-left: 20px;
+}
+.search-results input {
+  padding: 5px;
+  width: 200px;
+}
