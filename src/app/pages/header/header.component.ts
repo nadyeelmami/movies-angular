@@ -1,22 +1,11 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { SearchComponent } from "../search/search.component";
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
+  standalone: true,
+  imports: [RouterModule],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css'],
- 
+  styleUrls: ['./header.component.css']
 })
-export class headerComponent {
-
-  constructor(private router: Router) {}
-
-  searchMovies(event: any) {
-    const query = event.target.value.trim();
-
-    if (!query) return;
-
-    this.router.navigate(['/search'], { queryParams: { q: query } });
-  }
-}
+export class HeaderComponent {}
